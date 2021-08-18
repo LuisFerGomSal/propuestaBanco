@@ -1,0 +1,7 @@
+Instrucciones
+
+Para modificar el correo en donde se recibe la información, se debe modificar la variablo '$to' en el archivo 'enviar-correo.php'.
+
+Ejemplo
+
+$to = "correo-que-desee-utilizar@gmail.com"

