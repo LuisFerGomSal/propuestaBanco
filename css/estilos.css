@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+
+*{
+    font-family: 'Heebo', sans-serif;
+    font-size: 14px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../img/bg2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#logo{
+    display: block;
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 205px;
+}
+
+#form-container{
+    background-color: #FFFFFF;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 25px 0 25px 0;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 78%);
+    transition: all .2s;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    margin: 3em 1em 2em 1em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+#form-title{
+    color: #343434;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form-label{
+    padding-left: 1em;
+    color: #222223;
+}
+
+.form-field{
+    display: flex;
+    color: #222223;
+    margin: 1em;
+    border: none;
+    border-bottom: 1px solid #DDDDDD;
+    transition: all 1s ease-in-out;
+}
+
+.form-field:focus{
+    outline: none;
+    border-bottom: 2px solid #16AFA9;
+}
+
+.lbl-fld-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+}
+
+#date-field{
+    width: 50%;
+}
+
+/*REMUEVE SELECTORES DE CAMPO TIPO NUMBER*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+/*----------------------------------------*/
+
+.form-btn{
+    background-color: #009B3A;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.3em;
+    width: 160px;
+    height: 39px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.form-btn:hover{
+    background-color: #35A661;
+}
+
+@media (max-width: 780px){
+    #form-container{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 800px){
+    #form-container{
+        max-width: 90%;
+    }
+}
