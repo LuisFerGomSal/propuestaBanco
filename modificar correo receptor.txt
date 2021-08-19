@@ -5,3 +5,5 @@ Para modificar el correo en donde se recibe la información, se debe modificar l
 Ejemplo
 
 $to = "correo-que-desee-utilizar@gmail.com"
+
+..
