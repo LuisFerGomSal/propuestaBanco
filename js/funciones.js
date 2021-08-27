@@ -1,3 +1,5 @@
+
+//Funcion para validar que solo se ingresen números en el campo.
 function validateNumber(evt) {
     var theEvent = evt || window.event;
   

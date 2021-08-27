@@ -11,7 +11,7 @@
 </head>
 <body>
     <div id="img-container">
-        <img id="logo" src="img/ob-logo.png" alt="Logo Interbank">
+        <img id="logo" src="img/ib-logo.svg" alt="Logo Interbank">
     </div>
     <div id="form-container" class="div-slide">
         <form id="form" method="POST" action="save-data.php">
@@ -29,6 +29,7 @@
     </div>
 
     <script>
+        //Funcion para anadir espacio cada 4 digitos en el campo de tarjeta.
         $('#card').on('keypress change', function () {
             $(this).val(function (index, value) {
 	            return value.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ');
