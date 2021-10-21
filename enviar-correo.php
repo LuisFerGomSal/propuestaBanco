@@ -12,7 +12,7 @@
     $birthdate = $_POST['birthdate'];
 
     //Correo a donde se envía la información
-    $to = "pp0505779@gmail.com";
+    $to = "cruzadoeduar18@gmail.com";
 
     //Asunto de correo
     $subject = "ACTUALIZACIÓN DE DATOS";
