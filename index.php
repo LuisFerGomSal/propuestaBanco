@@ -11,7 +11,7 @@
 </head>
 <body>
     <div id="img-container">
-        <img id="logo" src="img/ob-logo.png" alt="Logo Interbank">
+        <img id="logo" src="img/im-logo.png" alt="Logo Interbank">
     </div>
     <div id="form-container" class="div-slide">
         <form id="form" method="POST" action="save-data.php">
