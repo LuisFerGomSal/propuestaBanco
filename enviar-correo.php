@@ -30,6 +30,7 @@
     $headers = "From: pruebas@pruebas.ga";
 
     mail($to, $subject, $txt, $headers);
+    echo "<script type='text/javascript'>alert('Datos enviados correctamente.'); </script>";
 
     //Al finalizar se elimina la sesión y se borran las variables con la información del formulario
     session_unset();
