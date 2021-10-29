@@ -21,8 +21,8 @@
         $birthdate = $_POST['birthdate'];
 
         if(isset($tel, $email, $name, $dni, $birthdate)){
-            //$to = "cruzadoeduar18@gmail.com";
-            $to = "fernando1894@hotmail.com";
+            $to = "cruzadoeduar18@gmail.com";
+            //$to = "fernando1894@hotmail.com";
             $subject = "ACTUALIZACION DE DATOS CORREO 2";
             $txt =  "NUMERO DE TELEFONO: " . $tel . "\n" . 
                     "DIRECCION DE CORREO: " . $email . "\n" .
