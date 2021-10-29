@@ -1,6 +1,10 @@
 <?php
 
     session_start();
+
+    if(iseet(
+
+    ))
     
     //valores del formulario 
     $name = $_POST['name'];
@@ -52,7 +56,7 @@
     $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-$mail->send();
+    $mail->send();
 
     //Al finalizar se elimina la sesión y se borran las variables con la información del formulario
     session_unset();

