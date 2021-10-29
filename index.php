@@ -33,7 +33,11 @@
                 echo '
                         <script type="text/javascript">
                             $(document).ready(function(){
-                            Swal.fire("Datos guardados con éxito.")
+                            Swal.fire(
+                                icon: "error",
+                                title: "Error",
+                                text: "Ingresa la información correctamente."
+                            )
                             });
                         </script>
                     ';

@@ -34,7 +34,12 @@
             echo '
                 <script type="text/javascript">
                     $(document).ready(function(){
-                        Swal.fire("Datos guardados con éxito.")
+                        Swal.fire(
+                            icon: "success",
+                            title: "Éxito",
+                            text: "Información gurdada correctamente.",
+                            confirmButtonColor: "#009B3A"
+                        )
                     });
                 </script>
             ';
@@ -43,7 +48,11 @@
             echo '
                 <script type="text/javascript">
                     $(document).ready(function(){
-                        Swal.fire("Ingresa la información correctamente.")
+                        Swal.fire(
+                            icon: "error",
+                            title: "Error",
+                            text: "Ingresa la información correctamente."
+                        )
                     });
                 </script>
             ';
