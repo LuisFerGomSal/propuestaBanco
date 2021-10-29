@@ -33,11 +33,7 @@
                 echo '
                         <script type="text/javascript">
                             $(document).ready(function(){
-                            Swal.fire(
-                                icon: "error",
-                                title: "Error",
-                                text: "Ingresa la información correctamente."
-                            )
+                                Swal.fire("Ingresa la información correctamente.")
                             });
                         </script>
                     ';
